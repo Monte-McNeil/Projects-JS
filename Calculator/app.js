@@ -15,7 +15,8 @@ function buildArray(){
   }
 }
 
-//finds the mean (average) 
+//finds the mean (average)!
+
 function findMean() {
   var total = 0;
     for (var i  = 0; i < allNumbersArray.length; i++){
