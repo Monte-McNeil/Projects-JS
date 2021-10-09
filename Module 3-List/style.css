@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    background-color: #C0C0C0;
+}
+
+.container {
+    display: flex;
+}
+
+.flex-child-1 {
+    flex: 50%;
+}  
+
+.flex-child-2 {
+    flex: 50%;
+    margin-left: 50px;
+}
+

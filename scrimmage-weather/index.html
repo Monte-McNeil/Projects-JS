@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Bootstrap Weather</a>
+               
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+    
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Use our weather API to get the forcast!</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Here it is!</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+
+                    <!-- User input-->
+                    <div class="col-md-6 col-lg-4 mb-5 border border-primary">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <h3>What area do you want?</h3>
+
+                            <label for="area">Select a location</label>
+                                <select id="area">
+                                    <option value="fwd">Fort Worth, TX - fwd</option>
+                                    <option value="oax">Omaha, NE - oax </option>
+                                    <option value="ffc">(Atlanta) Peachtree, GA - ffc</option>
+                                    <option value="boi">Boise, ID - boi </option>
+                                    <option value="aly">Albany, NY - aly</option>
+                                </select>
+                                    <br>
+                            <input id="user_choice" type="button" value="Get weather!" onclick="getWeather()"> 
+                        </div>
+                    </div>
+
+                    <!-- Today-->
+                    <div class="col-md-6 col-lg-4 mb-5 border border-primary">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <h2> Today </h2> 
+                            <p id="todayForecast"></p>
+                            
+                        </div>
+                    </div>
+                    <!-- Tomorrow-->
+                    <div class="col-md-6 col-lg-4 mb-5 border border-primary">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <h2>Tomorrow</h2>
+                            <p id="tomorrowForecast"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                    <!-- Day after tomorrow-->
+                    <div class="col-md-6 col-lg-4 mb-5 border border-primary">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <h2>Day After Tomorrow</h2>
+                            <p id="threeDaysForecast"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="script.js"></script>
+    </body>
+</html>

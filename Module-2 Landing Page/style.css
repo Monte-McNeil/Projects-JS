@@ -1,0 +1,154 @@
+/* Importing a font from google 1st exceptional*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+
+
+/* Universal styling */
+* {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Header */
+header {
+    background-color: #008763;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Logo */
+.logo {
+    height: 100px;
+    margin: 25px 25px;
+    border-radius: 25px;
+}
+
+/* List Items */
+li, a {
+    font-size: 16px;
+    color: #EDF0F1;
+    text-decoration: none;
+    align-items: center;
+    margin: inherit;
+}
+
+nav > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+/* Nav Bar */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    border: 2px solid black;
+}
+
+/* Transition on hover for navbar elements, 2nd exceptional */
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+/* Social Links */
+.social-links li  {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin: inherit;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: inherit;
+    border-radius: 15px;
+
+}
+
+/* Styling each social button individually */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ff6600;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* Starting on the body */
+
+/* First Body image */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #333333;
+}
+
+.container > .text {
+    color: #008763;
+    flex: 2 0 0%;
+    /* and eventually */
+    margin:auto 0;
+    text-align: center;
+}
+.container > .image {
+    flex: 1 0 0%;
+    text-align:right;
+    margin: 25px 25px;
+}
+
+.image > img {
+    vertical-align:top;
+    max-width: 100%;
+    max-height: 300px;
+}
+/* Multiple body pics container*/
+.container-2 {
+    background-color: #daa520;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 340px;
+    position: relative;
+}
+
+.pic-class {
+    height: 400px;
+    width: 500px;
+    max-width: auto;
+    padding: 30px 30px 0px 30px;
+}
+
+/* Styling Footer */
+footer {
+    background-color: #008763;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
+}

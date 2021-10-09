@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Hello World</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    // JS function getting ID of inputed name and outputting a message
+    function myFunction() {
+      let inputedName = document.getElementById("iname").value 
+      document.getElementById("message").innerHTML = `Welcome ${inputedName}!`;  
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Hello!</h1>
+
+    <form>
+        <label for="iname">Whats your name?</label> 
+        <input type="text" id="iname" name="iname"> <br>
+    </form>
+
+    <button type="button" onClick="myFunction()">Press me</button> <br>
+
+    <p id=message> </p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.array {
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .headerStats {
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  
+  .flexrowlist{
+    display: flex; 
+    flex-direction: row; 
+    padding: 10px; 
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flexcollist{
+    flex: 25%; 
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .flexcollist{
+      flex:80%;
+    }
+  }

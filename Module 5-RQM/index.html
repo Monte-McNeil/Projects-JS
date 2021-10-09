@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-white">Random Quote Generator</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container text-white bg-dark vertical center mt-5 rounded">
+        <p class="d-flex justify-content-center">You can choose from either a short, medium, or long quote from the options!</p>
+
+            <div class="d-flex justify-content-center">
+            <label for="cars" class="d-flex justify-content-center">Choose a length!</label>
+
+            <select name="quote" id="quote">
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+            <input type="submit" value="Submit" onclick="getQ()">
+        </div>
+    </div>
+
+    <div class="container text-center text-white bg-dark center mt-5 rounded">
+        <h3>Here is your Quote:</h3>
+        <div id="quote">
+            
+        </div>
+        <div id="author">
+           
+        </div>
+        <div id="place">
+
+         </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

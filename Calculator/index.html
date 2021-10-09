@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 3 Excercise - Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="array" style="background: rgb(155, 211, 203)">
+    <h1>Mean, Median Mode Calculator </h1><p id="showArray"></p>
+  </div>
+  <div class="headerStats" style="background: rgb(157, 211, 155)">
+    <p>mean: </p><p id="mean"></p>
+    <p>median: <p id="median"></p>
+    <p>mode: </p><p id="mode"></p>
+  </div>
+  <div class="flexrowlist">
+   <div class="flexcollist" style= "background: rgb(201, 156, 209)">
+    <form name="myForm" id="myForm">
+      <br> Min: <input type="number" id="min" value =""> <br/><br/>
+      Max: <input type="number" id="max" value =""><br/><br/>
+      Number to Add: <input type="number" name="newNumber" value ="">  <input type="button" value="Add to List" onclick="buildArray()"><br/><br/>
+      </br>
+      <br/>
+      <input type="button" value="Find Mean" onclick="findMean()">
+      <p id="mean"></p>
+      <input type="button"value ="Find Median" onclick="findMedian()">
+      <p id="median"></p>
+      <input type="button" value="Find Mode" onclick="findMode()">
+      <p id="mode"></p>
+        <button onClick="clear()">Clear</button>
+      </form>
+   </div>
+  </div>
+  <script src="app.js"></script> 
+</body>
+</html>

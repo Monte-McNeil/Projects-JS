@@ -1,0 +1,597 @@
+<!-- HTML is standard markup for webpages describing the stucture of the page telling the browser what to display on screen -->
+<!-- https://www.w3schools.com/html/default.asp -->
+
+<!-- All HTML elements follow - start tag, content, end tag - <tag> content <endtag> -->
+
+<!DOCTYPE html> <!-- Defines it's going to be a HTML5 doc-->
+
+<html lang="en-US"> <!-- Everything in the tag are going to be interpreted by the browser as HTML, lang just tells us what language is used, it hepls web browsers and search engines and what country -->
+
+<head> <!-- Meta data about the doc-->
+ <meta charset="UTF-8"> <!-- Defining the character set-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting viewport to make it responsive on all devices -->
+ <title>Learning HTML/CSS</title>    <!-- Specifies the title which shows in the search bar -->
+ 
+ <style>
+     h1 {color:purple;} /* Example of internal CSS */
+ </style>
+ <link rel="stylesheet" href="train.css"> <!-- Example of linking to an external CSS file -->
+
+</head>
+
+<body style="background-color:powderblue;"> <!-- The body of the doc that containes all visible elements -->
+
+<!-- The Head element -->
+<p>For the stuff you don't see, this includes the head. The head tag provides metadata, which usually describes the title, char set, styles, scripts, and other info.</p>
+<p>The title tag gives the page a name that appears in the tab on the top of the browser and shows in search engines.</p>
+<p>Style is a tag that allows the use of css in the same file, although for bigger projects you should always use a seperate file.</p>
+<p>Link allows you to link to seperate files such as a css file.</p>
+<p>meta tag is used to define the content, although its not visible it helps browsers by telling it how to display a page.</p>
+
+<!-- Headings go from 1-6 1 being the biggest, they can also be customized in css even though they have a default size and margin -->
+<h1>This is a Heading 1</h1>
+<h2>This is a Heading 2</h2>
+<h3>This is a Heading 3</h3>
+<h4>This is a Heading 4</h4>
+<h5>This is a Heading 5</h5>
+<h6>This is a Heading 6</h6>
+
+<!-- P refers to paragraph, use for generic text -->
+<p>This is an example of useing a p tag</p>
+
+<!-- links are defined using the a tag, a = attribute, href = the links destination -->
+<a href="https://www.w3schools.com/html/default.asp">Link to w3 schools</a>
+
+<!-- Images have the img tag, src=the source file, alt = alternative text, width and height are also attributes it's in pixels
+there are 2 ways to use src paths, 1=Absolute URL that links to the external image, 2=realtive URL that links to an image you own -->
+<img src="pics\best-dog-food-for-dachshunds-1150x700.jpg" alt="Weiner Dog" width="104" height="104" style="padding: 20px;">
+
+<!-- Some HTML elements only need an opening tag such as <br> which breaks a line of text -->
+<p>This is a <br> paragraph with a line break.</p>
+
+<!-- Attributes more: All HTML elements can have them, it gives additional information about elements, they are always in the start tag, format of name=value -->
+
+<!-- A style attribute does what it says, color, font, size, are a few examples. <tagname style="property:value;"> is the format with property=CSS property, and value=CSS value -->
+<p style="color:red;">This text will appear red</p>
+
+<!-- Check the body tag for an example on background color, you can also target specific elements with this -->
+
+<!-- Font Family -->
+<p style="font-family:verdana;">An example using font family</p>
+
+<!-- Text Size -->
+<p style="font-size:200%">An example of using font size</p>
+
+<!--Text allignment defines the horizontal position in its element, can be multiple, center, left, or right -->
+<p style="text-align:center;">An example of using text align</p>
+
+<!-- <i> for italic <em> for emphasized, you can use most of the following inline with text -->
+<i>This text is Italic</i>
+<em>This text is emphasized</em>
+
+<!--<small> for smaller text and <mark> for highlighted text-->
+<small>This text is small</small>
+<mark>This text is highlighted</mark>
+
+<!-- <del>= text deleted from a doc <ins>= text inserted from a doc <sub>= think of H20 the 2 is smaller <sup>= Think of those little numbers on top of words like WWW[]1 -->
+<p>My favorite color is <del>blue</del> red.</p>
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+<!-- Quotations: blockquote defines text that is sourced on another site-->
+<p>This is an example of a blockquote</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization.
+</blockquote>
+
+<!-- q tag is used for short quotations -->
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<!-- abbr for acronyms-->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<!-- address for contact info -->
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+</address>
+
+<!-- cite for titles of creative work -->
+<p><cite>The Scream</cite>by Edvard Munch. Painted in 1893.</p>
+
+<!-- HTML colors such as RGB, HEX, HSL combined with CSS -->
+<p style="background-color: tomato;"> This is an example of html background color</p>
+
+<!-- you can set the color of text as well -->
+<p style="color:dodgerblue;"> This is an example of colored text</p>
+
+<!-- Border color  -->
+<h3 style="border:2px solid violet;"> This is an example of border color</h3>
+
+<!-- Colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values -->
+<p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 100, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+<!-- Explanation... RGB is red green blue, RGBA red green blue alpha is an extension for obacity 
+in html it goes rgb(red, green, blue) 0-255 are your values the higher the number the greater the intensity
+so for example: 
+rgb(255, 0, 0) will be pure red
+rgb(0, 0, 0) will be black
+rgb(255, 255, 255) will be white
+
+Shades of gray are defined by setting all values the same, the higher the same value the lighter the gray
+rgb(60, 60, 60) will be dark gray
+rgb(180, 180, 180) will be light gray
+
+RGBA examples the higher the alpha value the less transparent you can go from 0 - 1 with decimals for in between
+rgba(255, 99, 71, 0.5)
+-->
+
+<!-- hexidecimal values go from 00 and ff from 0-255
+#ff0000 will be red because ff is the highest value and green and blue are set to 00
+#ffffff is while
+#000000 is black
+-->
+
+<!-- HSL is hue saturation and lightness hsla is the same with alpha, hsl(hue, saturation, lightness)
+hue = degree of the color wheel 0-360. 0 is red, 120 is green, and 240 is blue
+saturation is the intensity of the color = a percentage value, 0% is a shade of gray, 100% is the full color
+lightness is how much light you want to give the color = a percentage value, 0% is black, 100% is white. 
+-->
+
+<!-- HTML CSS a more in depth look
+CSS can be injected right into HTML code as i've seen, but there are 3 ways in total
+inline - using the style attribute inside an HTML element (I've already done this above a few times)
+internal - using a <style> element in the head section (look in the header for an example)
+external by using a <link> element to link to an external CSS file
+
+There are 3 simple commonly used CSS properties
+color - defines text color
+font-family - describes the font to be used
+font-size - defines text size to be used
+
+Some examples of other common uses
+border - defines a border around a HTML element 
+padding - defines the space between the text and its border 
+margin - defines the space outside of a border -->
+<p style="border: 2px solid purple;">Example of CSS border property</p>
+<p style="border: 2px solid black; padding: 30px;">Example of CSS padding</p>
+<p style="margin: 50px;">Example of CSS margin</p>
+
+<!-- HTML links allow users to click to another page or another website, syntax: <a href="url">link text</a>
+Quick tip: you can change if the browser will open a new tab if a link is clicked, here are other attributes you can use
+
+_self - default, opens the link in the same window
+_blank - opens the doc in a new window
+_parent - opens the doc in the parent frame
+_top - opens the doc in the full body of the window
+
+<a href="url" target="_blank">Link text</a>
+
+absolute URLs a websites full address
+relative URLs a local link to a page within the same website
+
+relative - <a href="html_images.asp">HTML Images</a>
+-->
+
+<!-- You can also use an image as a link 
+<a href="link">
+  <img src="smile.jpg" alt="smily face" style="width:40px;height:40px;">
+</a>
+
+link to an email address
+<a href="mailto:someone@gmail.com">Send Email</a>
+-->
+
+<!-- Button as a link with JS, value is what text the button will have on it  -->
+<input type="button" onclick="location.href='https://google.com';" target="_blank" value="Go to Google" />
+
+<!-- Link titles allow you to specify what you want the tooltip to say -->
+<a href="https://www.facebook.com/" target="_blank" title="Go to facebook">Faceook</a>
+
+<!-- Bookmarts are usefull when a webpage is long 
+first use id to create a bookmark, then add a bookmark to jump within the page
+
+id="value" to create
+href="#value" to link
+-->
+<p><a href="#CH4">Jump to example bookmark</a></p>
+<h3 id="CH4">Example of Bookmarks</h3>
+
+<!-- Quick notes on images to help clear things up
+Images in another folder - include the folder name in the src attribute
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+Images on another server/website - must specify full URL in the src attribute
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+HTML supports GIFS
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+Background images are created by using html style attribute and background-image property
+<div style="background-image: url('url');">
+
+  here put the text you want the image to appear behind
+
+</div>
+
+div is just one example, you can do this with most html elements just follow the same syntax ruling
+-->
+
+<!-- image maps are used to create clickable areas on an image that link to vaious things-->
+
+<!-- to start get an image and add the usemap attribute used to make a relationship between the image and the map
+then use <map> to create the map, using the name attribute to import the usemap name
+
+Use <area> to start 
+define the shape you want - rect, circle, poly, default
+
+rect for example has coordinates that come in pairs, one for x and one for y, so 34, 44 would be 34 from the left margin and 44 from the top
+-->
+
+<img src="pics\whale.png" alt="whale" usemap="#whale">
+
+<map name="whale">
+  <area shape="rect" coords="34, 44, 270, 350" href="https://en.wikipedia.org/wiki/Whale" title="Learn more about whales" alt="clickable area">
+</map>
+
+<!-- The table tag defines a table, 
+Each row is defined with tr
+The header is defined as a th 
+Each data cell is defined with a td goes left to right under the th 
+By default the text in th elements are bold and centered
+By default, the text in td elements are regular and left aligned
+You can but the style attribute in to adjust the width and height
+-->
+
+<p>Example of a table</p>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- To create a table where a cell spans for more than one column use the colspan attribute-->
+<p>Table with the colspan attribute</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55556674</td>
+  </tr>
+</table>
+
+<!-- To create a table that has a cell span more than one row use the rowspan attribute, I also added a caption using the caption tag -->
+<p>Table with the rowspan attribute and a caption tag</p>
+<table>
+  <caption>Bill gates</caption>
+  <tr>
+    <th>Name</th>
+    <td>Bill Gates</td>
+  </tr>
+
+  <tr>
+    <th rowspan="2">Telephone</th>
+    <td>55577854</td>
+  </tr>
+
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+</p>
+
+<p>HTML lists allow us to groups of related items in lists</p>
+
+<!-- There are a couple HTML lists first is unordered starts with the ul tag and li tags to define the items has bullet points-->
+<p>Unordered List</p>
+<ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Tomato</li>
+</ul>
+
+<!-- Ordered lists start with the ol they will be numbered starting with 1-->
+<p>Ordered List</p>
+<ol>
+  <li>Most important</li>
+  <li>Second Important</li>
+  <li>Third Element</li>
+</ol>
+
+<!-- Description list is a list of terms with a description of each term it starts with dl tag
+dt tag defines the term
+dd tag defines the description-->
+<p>Description list</p>
+<dl>
+  <dt>Coffee</dt>
+   <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+   <dd>White cold milk</dd>
+</dl>
+
+<!-- HTML block and inline elements -->
+<p>Every html element has a default display value depending on what type of element it is</p>
+
+<dl>
+  <dt>Block</dt>
+   <dd>Always starts on a new line and takes up the full width availiable</dd>
+</dl>
+
+<img src="pics\blocks.png" alt="block elements in HTML">
+
+<dl>
+  <dt>Inline</dt>
+   <dd>Doesn't start on a new line and it only takes up as much width as necessary</dd>
+</dl>
+
+<img src="pics\inline.png" alt="Inline elements in HTML">
+
+<H2>The Div Element usefull</H2>
+<p>the div element is often used as a container for other html elements.
+   It has no required attributes but style, class, and id are common.
+   When used with css it can be used to style blocks of content
+</p>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>Inside of a div</h2>
+  <p>Making a background color of black and a font color of white, and the text has a padding of 20px</p>
+</div>
+
+<!-- The span element is used as an inline container used to markup some text-->
+<h3>Using the span tag for inline styling</h3>
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+<h2>Classes .</h2>
+
+<p>the class element is used to define a class for an html element, multiple html elements can share the same class</p>
+<p>The class attribute is often used to point to a class name in a style sheet. It can also be used by JavaScript to access and manipulate elements with the specific class name.</p>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<h3>Stuff to memorize about classes</h3>
+<ul>
+  <li>HTML elements can belong to more than one class.</li>
+  <li>Different HTML elements can point to the same class name. So a div and a p tag can both go to the same classname</li>
+</ul>
+
+<h2>ID #</h2>
+<p>The id attribute is used to secify a unique id for an HTML element, you cannot have more than one element with the same id in a doc</p>
+<p>in CSS it is targeted with # followed by the ids name </p>
+
+<p id="example-id">This is an example of an id</p>
+
+<h4>Remember</h4>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<ul>
+  <caption>An HTML iframe is used to display a web page within a web page.</caption>
+  <li>The HTML iframe tag specifies an inline frame</li>
+  <li>The src attribute defines the URL of the page to embed</li>
+  <li>Always include a title attribute (for screen readers)</li>
+  <li>The height and width attributes specifies the size of the iframe</li>
+  <li>Use border:none; to remove the border around the iframe</li>
+</ul>
+
+<!-- HTML has several sematic elements that can define different parts of a web page -->
+<h2>HTML Layouts</h2>
+<img src="pics\htmllayout.png" alt="HTML Layout">
+
+<!-- Little bit of responsivness
+ In the meta tag I set the viepwort to be responsive
+ for pictures you can use the picture element
+-->
+<p style="font-size:10vw">style="font-size:10vw"</p> 
+
+<h1>Semantics</h1>
+
+<p>Semantic elements = elements with meaning</p>
+<p>clearly describes it's meaning, a div does not, table does</p>
+
+<ul>
+  <li>Section = Defines a grouping of content, think of intro, body, conclusion</li>
+  <li>Article = Specifies self contained content</li>
+  <li>Header = Defines the introduction of the page or the nav bar</li>
+  <li>Footer = Describes the footer and the content inside</li>
+  <li>Nav = Defines a block Navigation links </li>
+  <li>Aside = Some conent beside the main content like a sidbar</li>
+  <li>Figure = Illustrations, diagrams, photos etc...</li>
+  <li>Figcaption = Defines a caption for a figure element, placed as the child</li>
+</ul>
+
+<a href="https://www.w3schools.com/html/html5_syntax.asp" target="_blank">Link for a style guide on html</a>
+
+<h1>HTML Forms</h1>
+<p>Forms are used to collect user input, most often sent to the server for processing, the form element defines a space where you will make text fields, buttons and others</p>
+<p>Best to just make one form tag for all user input, use the onSubmit attribute as well</p>
+<p>input = most used form element, can be used in many ways depending on the type attribute</p>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" value="John">
+
+  <label for="pwd">password</label>
+  <input type="password" id="pwd" name="pwd" required>
+
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+<p>There are many others so here</p>
+
+<img id="input-tag-pic" src="pics/input.PNG" alt="list of input types">
+
+<h1>Everything beneath here is for CSS</h1>
+<p>CSS or Cascading Style sheets is used to style the HTML document,
+  it describes how HTML elements should be displayed. <br>
+  It save a bunch of time, it controls the layout of multiple web pages at once in 1 seperate file
+</p>
+
+<p>Comments are also used for multi-line: /* */</p>
+<p>CSS syntax contains a selector, and a declaration block</p>
+<img src="pics/csssyntex.PNG" alt="CSS Syntax">
+
+<!--Selectors are used to find the html element you wish to style, you can do this is multiple ways 
+  simple = elements based on name, id, class
+  combinator = selects elements based on the relationship between them
+  pseudo = elements based on a certain state
+  attribute = selects elements based on the attribute 
+  !-->
+  
+  <p>simple selector:</p> 
+  <p> p {text-align: center;}</p>
+
+  <p>id selector</p>
+  <p>#id-selector {color: red;}</p>
+
+  <p>class selector</p>
+  <p>.class-selector {color: red;}</p>
+
+  <p>A specific class selector</p>
+  <p>p.class-selector{color: red;}</p>
+
+  <p>Universal selector, useful for getting rid of pre-made default styles browsers use</p>
+  <p>* {background-color: red;}</p>
+
+  <p>Grouping selectors are good for multiple elements you want the same style for</p>
+  <p>h1, h2, p{color:red}</p>
+
+  <H2>CSS Colors</H2>
+  <!-- Used by RGB, HEX, HSL, RGBA, HSLA 
+   I explained a bunch of how colors work in the html section, it's pretty much the same
+  -->
+
+  <p style="background-color: chocolate;">Example of background color</p>
+  <p style="color: cornflowerblue;">Example of text color</p>
+  <p style="border: solid 2px white;">Example of border and border color</p>
+
+  <h2>Border image</h2>
+  <img src="pics/cssborders.PNG" alt="CSS borders">
+  
+  <h2>Margins</h2>
+<!-- Margin properties are used to create space around an element, outside of defined borders -->
+
+<ul>
+  <li>margin-top</li>
+  <li>margin-right</li>
+  <li>margin-bottom</li>
+  <li>margin-left</li>
+</ul>
+
+<p>There are also different values you can give these</p>
+<ul>
+  <li>auto - the browser calculates the margin</li>
+  <li>length - specifies it in px, pt, cm, etc</li>
+  <li>% - specifies the width in percentage from its containing element</li>
+  <li>inherit - specifies the margin should be inherited from its parent element</li>
+</ul>
+
+<p>There is a shorthand too, so margin: t r b l;</p>
+
+<!-- For the different values
+ auto sets the margin to the horizontal center of its container
+ inherit just takes the margin its parent is using although idk when to use it
+-->
+
+<h2>Padding</h2>
+<!-- Padding is used to create space around an elements content inside of any defined borders -->
+
+<p>Just like margins there is top, right, bottom, left. But the values for these can be length, %, or inherit</p>
+<p>The shorthand is the same as margins too</p>
+<p>The box-sizing property is usefull when dealing with width and padding working together
+  say you have an element with a width of 300px and a padding of 25px the actuall width of 
+  that element will be 400px. Using bos-sizing: border-box; it keeps the width at 300px
+  no matter what. 
+</p>
+
+<!--height and width are pretty self explanitory 
+ it has the same values as most others do
+-->
+
+<h2>Box Model</h2>
+<p>LEARN THIS</p>
+<img src="pics/box.PNG" alt="Box Model">
+
+<p id="box-model">This is an example of box model with a 50px padding
+  20px margin, and a 15px green border. Play around with the values in css
+  to get it in your head
+</p>
+
+<!-- One thing is the outline property, a line that is similar to a border
+but is outside of it to make the element stand out more you might use these 
+on points of interests like buttons links, form fields etc.
+
+They pretty much have all the values a border does so refer to that -->
+
+<h2>CSS Text</h2>
+
+<p>Color property will change the color of text</p>
+<p>Background-color is pretty self explanitory</p>
+
+<h3>Alignment</h3>
+<p>Text-align is used to change the postition of desired text, different values are used to achieve this</p>
+<ul>
+  <li>center</li>
+  <li>left</li>
+  <li>right</li>
+  <li>justified - stretches lines for equal width like in newspapers or magazines</li>
+</ul>
+<caption> Justified example
+<p id="justified-example">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 
+  'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+</p>
+</caption>
+
+<h3>Text Decoration</h3>
+<p> The text-decoration property is used to either set or remove decorations from text, a good example of this is links </p>
+
+<a id="link-decor" href="https://www.w3schools.com/css/css_text_decoration.asp" target="_blank">An example of removing styles from a link</a>
+
+</body>  
+</html>

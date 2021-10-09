@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IST-411 Sports Survey Form!</h1>
+        <p><i>Thankyou for taking time to complete this survery!</i></p>
+    </header>
+
+  <form onSubmit="alert('Thank you for your feedback.')">
+    <label for="name">Name</label> 
+    <input type="text" id="name" name="name" required> <br>
+    <label for="email ">Email</label> 
+    <input type="email" id="email" name="email"> <br> 
+
+    <label for="sports">Select your Favorite Sport</label> <br>
+      <select name="sports" id="sports"> 
+        <option value="football">Football</option>
+        <option value="Volleyball">Volleyball</option>
+        <option value="Track">Track</option>
+        <option value="None">None</option>
+      </select>
+        
+    <p>Select your favorite athlete</p>
+    <input type="radio" id="athlete" name="athlete" value="usain-bolt">
+    <label for="athlete">Usain Bolt</label> <br>
+    <input type="radio" id="athlete" name="athlete" value="tom-brady">
+    <label for="athlete">Tom Brady</label> <br>
+    <input type="radio" id="athlete" name="athlete" value="lebron-james">
+    <label for="athlete">Lebron James</label> <br>
+    <input type="radio" id="athlete" name="athlete" value="megan-rapinoe">
+    <label for="athlete">Megan Rapinoe</label>
+        
+   <p>What's your biggest concern when joining a sport </p>
+    <input type="checkbox" id="sport-concern" name="sport-concern" value="injury">
+    <label for="sport-concern">Injury</label> <br>
+    <input type="checkbox" id="sport-concern" name="holidays" value="coaches">
+    <label for="sport-concern">Coaches</label> <br>
+    <input type="checkbox" id="sport-concern" name="holidays" value="teammates">
+    <label for="sport-concern">Teammates</label> <br>
+    <br>
+    
+    <label for="review">Please leave a review of why or why not you like participating in sports</label> <br>
+      <textarea name="review" id="review" cols="50" rows="10">
+        You can type your answer here!
+      </textarea> 
+         <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

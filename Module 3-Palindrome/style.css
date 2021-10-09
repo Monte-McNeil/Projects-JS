@@ -1,0 +1,29 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: larger;
+}
+
+#ci {
+    margin-bottom: 15px;
+}
+
+.myflexboxRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myflexboxColumn {
+    flex: 33%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .myflexboxRow {
+        flex-direction: column;
+    }
+}
+

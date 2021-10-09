@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+* {
+    font-family: Asap, sans-serif;
+    background-color: #E27D60;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    flex: 25%; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width:992px){
+   .box {  
+    flex: 50%;
+   }
+}
+
+@media screen and (max-width: 600px) {
+    .container-1 {
+      flex-direction: column;
+    }
+}

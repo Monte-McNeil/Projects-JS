@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 S & SC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+      <h1>Responsive Web Page with Flexbox!</h1>
+  </div>
+
+    <div class="container-1">
+
+      <div class="box">
+          <h2>Box One</h2>
+          <a href="https://www.google.com" target="_blank">Go to Google</a>
+      </div>
+
+      <div class="box">
+          <h2>Box Two</h2>
+          <img src="\Modules\media\dog.jpg" alt="Picture of dog">
+      </div>
+
+        <div class="box">
+            <h2>Box Three</h2>
+              <video width="400" controls>
+                <source src="\Modules\media\dog-vaccum.mp4" type="video/mp4">
+                    Your Browser does not support HTML videos 
+              </video>
+        </div>
+
+        <div class="box">
+            <h2>Box Four</h2>
+            <p>Click the button to find your coordinates!</p>
+            <button onClick='getLocation()'>Click me</button>
+            <p id='geo'></p>
+        </div>
+    </div>
+
+  <script>
+
+let x = document.getElementById('geo');
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        geo.innerHTML = "Geolocation not supported by browser.";
+    }
+ }
+
+ function showPosition(position) {
+    geo.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+ }
+  </script>
+</body>
+</html>

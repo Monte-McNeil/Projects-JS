@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>List Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <header>
+        <h1>List Tracker</h1>
+    </header>
+
+<div class="container">
+        <div class="flex-child-1">
+            <h2>Obtain a word and put it in a list</h2>
+            <form name="theForm">
+                New Word: <input type="text" name="word" value=""> <br> <br>
+                What List 1 or 2? <input type="number" name="number" value=""> <br>
+                <button type="button" onclick="validateThenAdd()">Add to list</button>
+            </form>
+        </div>
+        <div class="flex-child-2">
+            <h2>List 1</h2>
+            <table id="list1">
+                <tr></tr>
+            </table>
+            <br> <br>
+            <button type="button" onclick="clearList1()">Clear List</button>
+
+            <h2>List 2</h2>
+            <table id="list2">
+                <tr></tr>
+            </table>
+            <br> <br>
+            <button type="button" onclick="clearList2()">Clear List</button>
+        </div>
+    </form>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
